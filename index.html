@@ -4,34 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dhruvi Patel</title>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Dhruvi Patel</title>
     <style>
         body {
-            background-color: white;
-        }
-        
-        .dark-mode {
-            background: black;
-            color: white;
+            background: linear-gradient(120deg, hsla(209, 100%, 50%, 0.8) 0%, hsla(209, 100%, 50%, 1) 0%, hsla(209, 100%, 50%, 1) 0%, hsla(209, 100%, 50%, 0.8) 25%, hsla(209, 100%, 50%, 0.6) 50%, hsla(209, 100%, 50%, 0.4) 70%, hsla(209, 100%, 50%, 0.2) 100%);
         }
     </style>
 </head>
 
 <body>
+    <header class="header" id="header">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
-    <h2>Toggle Dark/Light Mode</h2>
-    <p>Click the button to toggle between dark and light mode for this page.</p>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
 
-    <button onclick="myFunction()">Toggle dark mode</button>
-
-    <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-    </script>
-    <script src="main.js"></script>
+        <script src="main.js"></script>
+    </header>
 
 </body>
 
