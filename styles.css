@@ -74,7 +74,7 @@ a {
     float: right;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -86,7 +86,7 @@ a {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .topnav.responsive {
         position: relative;
     }
