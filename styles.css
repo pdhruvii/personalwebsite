@@ -10,9 +10,9 @@ html {
 
 ul {
     list-style-type: none;
-    padding: 0;
+    /*padding: 0;
     text-align: right;
-    /*display: inline-block;*/
+    display: inline-block;*/
     /*text-align: right;*/
 }
 
@@ -48,7 +48,7 @@ a {
 .topnav a {
     /*float: right;
     display: block;*/
-    /*display: inline-block;*/
+    display: inline-block;
     color: white;
     /*text-align: center;*/
     padding: 14px 16px;
@@ -70,12 +70,17 @@ a {
     display: none;
 }
 
+.topnav-right {
+    float: right;
+}
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
         display: none;
     }
     .topnav a.icon {
         /*float: right;*/
+        /*display: inline-block;*/
         display: inline;
         text-align: right;
     }
@@ -97,7 +102,8 @@ a {
     }
 }
 
-.bottom_navMenu {
+
+/*.bottom_navMenu {
     list-style-type: none;
     margin: 0;
     position: fixed;
@@ -111,21 +117,48 @@ a {
     width: 50%;
     border-radius: 4rem;
     bottom: 1rem;
-    /*backdrop-filter: blur(10px);*/
-    /*display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        width: 50%;
-        background-color: black;*/
+}*/
+
+.bottom_navMenu {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    bottom: 100rem;
+    background-color: rgb(0, 0, 0, 0.075);
+    border-radius: 4rem;
+    width: 300px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    text-align: center;
+    bottom: 0;
 }
+
+
+/*
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.075);
+}
+
+.topnav a {
+    
+    display: inline-block;
+    color: white;
+    
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}*/
 
 .bottom_navMenu a {
     color: white;
     display: inline-block;
     margin: auto;
-    padding: 20px;
-    font-size: 23px;
+    padding: 10px;
+    font-size: 22px;
 }
 
 .bottom_navMenu a:hover {
@@ -133,14 +166,7 @@ a {
     color: black;
 }
 
-
-/*.nav_logo {
-    background-color: rgb(0, 0, 0, 0.075);
-    float: left;
-    display: block;
+.bottom_navMenu a.active {
+    background-color: #15bd98;
     color: white;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}*/
+}
