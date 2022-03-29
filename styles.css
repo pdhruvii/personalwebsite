@@ -1,221 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+html {
+    height: 100%;
+}
+
 body {
     background-image: linear-gradient(120deg, #92fe9d 0%, #00c9ff 100%);
     font-family: 'Poppins', sans-serif;
 }
 
-html {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*html {
     scroll-behavior: smooth;
     overflow: scroll;
     height: 1000px;
     /*overflow-x: hidden;
-    this removes horiz scroll bar*/
-}
+    this removes horiz scroll bar
+}*/
 
-ul {
-    list-style-type: none;
-    /*padding: 0;
-    text-align: right;
-    display: inline-block;*/
-    /*text-align: right;*/
-}
-
-li {
-    list-style-type: none;
-}
-
+li,
 a {
+    color: white;
     text-decoration: none;
 }
 
-
-/*right {
-    text-align: right;
-    display: inline-block;
-}*/
-
-
-/* Add a black background color to the top navigation */
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.nav {
+header {
+    background-color: rgba(0, 0, 0, 0.06);
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    /*padding: 30px 10%;*/
+    padding: 30px 2%;
 }
 
-.container {
-    max-width: 100%;
-    /*display: flex;
-    justify-content: center;*/
+.nav_logo {
+    cursor: pointer;
+    color: white;
+    /*color: rgb(5, 146, 127);*/
+    /*color: #92fe9d;*/
+    /*font-size: x-large;*/
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: rgb(0, 0, 0, 0.075);
+.nav__links {
+    list-style: none;
 }
 
-.topnav a {
-    /*float: right;
-    display: block;*/
+.nav__links li {
     display: inline-block;
-    color: white;
-    /*text-align: center;*/
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    /*padding: 0px 20px;*/
+    padding: 0px 12px;
 }
 
-.topnav a:hover {
-    background-color: white;
-    color: black;
-    padding: 0.70rem;
-    border-radius: 0.5rem;
+.nav__links li a {
+    transition: all 0.3s ease 0s;
 }
 
-.topnav a.active {
-    background-color: #09b6b6;
-    color: white;
-    padding: 0.70rem;
-    border-radius: 0.5rem;
-}
-
-.topnav .icon {
-    display: none;
-}
-
-.topnav-right {
-    float: right;
-}
-
-@media screen and (max-width: 600px)
-/*and (max-height: 600px)*/
-
-{
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        /*float: right;*/
-        /*display: inline-block;*/
-        display: inline;
-        text-align: right;
-    }
-}
-
-@media screen and (max-width: 600px)
-/*and (max-height: 600px)*/
-
-{
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-
-.bottom_navMenu {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    bottom: 100rem;
-    background-color: rgb(0, 0, 0, 0.075);
-    border-radius: 4rem;
-    width: 315px;
-    height: 58px;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -12%);
-    text-align: center;
-    bottom: 0;
-}
-
-.bottom_navMenu a {
-    color: white;
-    display: inline-block;
-    margin: auto;
-    padding: 10px;
-    font-size: 25px;
-}
-
-.bottom_navMenu a:hover {
-    background-color: white;
-    color: black;
-    padding: 0.70rem;
-    border-radius: 1rem;
-}
-
-.bottom_navMenu a.active {
-    background-color: #15bd98;
-    color: white;
-    padding: 0.70rem;
-    border-radius: 1rem;
+.nav__links li a:hover {
+    color: rgb(5, 146, 127);
+    /*color: aquamarine;*/
 }
 
 
-/*.flex-container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-.flex-container>div {
-    background-color: dodgerblue;
-    padding: 200px;
-    color: white;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    //the second half below is
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+/*.nav__links li a:active {
+    color: blue;
 }*/
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 30px;
-    text-align: center;
-}
-
-.flex-item-left {
-    background-color: #f1f1f1;
-    padding: 10px;
-    flex: 50%;
-}
-
-.flex-item-right {
-    background-color: dodgerblue;
-    padding: 10px;
-    flex: 50%;
-}
-
-
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-
-@media (max-width: 800px) {
-    .flex-item-right,
-    .flex-item-left {
-        flex: 100%;
-    }
-}
