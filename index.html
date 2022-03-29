@@ -2,90 +2,55 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dhruvi Patel</title>
-    <style>
-        body {
-            background-image: linear-gradient(120deg, #92fe9d 0%, #00c9ff 100%);
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Boxicon icons online, imported css -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="topnav" id="myTopnav">
-                <a href="#">Dhruvi Patel</a>
-                <div class="topnav-right">
-                    <a href="#home" class="active">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#work">Work</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            </div>
+    <header>
+        <a href="#" class="nav_logo">Dhruvi Patel</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+
+                <li>
+                    <a href="#">About</a>
+
+                </li>
+
+                <li>
+                    <a href="#">Work</a>
+
+                </li>
+
+                <li>
+                    <a href="#">Skills</a>
+
+                </li>
+
+                <li>
+                    <a href="#">Projects</a>
+
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+
+                </li>
+            </ul>
+
         </nav>
 
-        <div class="bottom_navMenu" id="bottomTopnav">
-            <a href="#home" class="active">
-                <i class='bx bx-home'></i>
-            </a>
-
-            <a href="#about">
-                <i class='bx bx-user'></i>
-            </a>
-
-            <a href="#work">
-                <i class='bx bx-briefcase-alt-2'></i>
-            </a>
-
-            <a href="#skills">
-                <i class='bx bxs-edit'></i>
-            </a>
-
-            <a href="#projects">
-                <i class='bx bx-folder-open'></i>
-            </a>
-
-            <a href="#contact">
-                <i class='bx bx-chat'></i>
-            </a>
-        </div>
-
-
-
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
     </header>
 
 
-    <section class="about section" id="about"></section>
-    <section class="work section" id="work"></section>
-    <section class="skills section" id="skills"></section>
-    <section class="projects section" id="projects"></section>
-    <section class="contact section" id="contact"></section>
-    </main>
-    <footer class="footer"></footer>
-    <script src="main.js"></script>
+
 
 </body>
 
