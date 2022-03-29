@@ -65,7 +65,6 @@ header {
     /*color: aquamarine;*/
 }
 
-
-/*.nav__links li a:active {
-    color: blue;
-}*/
+.nav__links li a.active {
+    color: rgb(5, 146, 127);
+}
