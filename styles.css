@@ -138,3 +138,47 @@ header {
     align-items: center;
     gap: 1.5rem;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-item {
+    /*width: 100x;
+    margin: 10px;*/
+    height: auto;
+    /*border: 3px solid #333;*/
+    /*background-color: white;*/
+}
+
+.home {
+    padding-top: 50px;
+    /*background-color: white;*/
+}
+
+.about {
+    padding-top: 50px;
+    background-color: yellow;
+}
+
+.work {
+    padding-top: 40px;
+    background-color: orange;
+}
+
+.skills {
+    padding-top: 50px;
+    background-color: green;
+}
+
+.projects {
+    padding-top: 50px;
+    background-color: blue;
+}
+
+.contact {
+    padding-top: 50px;
+    background-color: blueviolet;
+}
